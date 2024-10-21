@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerador de Senhas Seguras</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Gerador de Senhas Seguras</h1>
+      <form method="POST">
+        <label for="tamanho">Tamanho da senha:</label>
+        <input
+          type="number"
+          id="tamanho"
+          name="tamanho"
+          value="12"
+          min="4"
+          max="30"
+          required
+        />
+
+        <label for="letras_min">
+          <input type="checkbox" id="letras_min" name="letras_min" checked />
+          Incluir letras minúsculas
+        </label>
+
+        <label for="letras_mai">
+          <input type="checkbox" id="letras_mai" name="letras_mai" checked />
+          Incluir letras maiúsculas
+        </label>
+
+        <label for="numeros">
+          <input type="checkbox" id="numeros" name="numeros" checked />
+          Incluir números
+        </label>
+
+        <label for="especiais">
+          <input type="checkbox" id="especiais" name="especiais" />
+          Incluir caracteres especiais
+        </label>
+
+        <button type="submit">Gerar Senha</button>
+      </form>
+
+      {% if senha %}
+      <h2>Senha Gerada: {{ senha }}</h2>
+      {% endif %}
+    </div>
+  </body>
+</html>
