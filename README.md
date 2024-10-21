@@ -19,12 +19,4 @@ Este é um projeto simples de um **Gerador de Senhas Seguras** feito com Python 
 
 ## Como Rodar o Projeto
 
-### Pré-requisitos
-
-- **Python 3.x** instalado.
-- **Pip** instalado para gerenciar pacotes.
-- **Git** para clonar o repositório (opcional, mas recomendado).
-
-### Passos para Instalar e Rodar Localmente
-
 Instalar as dependências, rodar o flask local, e acessar a porta através do navegador.
