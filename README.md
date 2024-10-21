@@ -20,3 +20,5 @@ Este é um projeto simples de um **Gerador de Senhas Seguras** feito com Python 
 ## Como Rodar o Projeto
 
 Instalar as dependências, rodar o flask local, e acessar a porta através do navegador.
+
+![image](https://github.com/user-attachments/assets/84b9ef46-b1cd-4963-ae5a-2a982322349d)
