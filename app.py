@@ -21,6 +21,7 @@ def gerar_senha(tamanho, letras_min, letras_mai, numeros, especiais):
     return senha
 
 @app.route('/', methods=['GET', 'POST'])
+
 def index():
     senha = None
     if request.method == 'POST':
