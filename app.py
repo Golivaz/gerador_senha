@@ -5,6 +5,7 @@ import string
 app = Flask(__name__)
 
 # Função para gerar senhas
+
 def gerar_senha(tamanho, letras_min, letras_mai, numeros, especiais):
     caracteres = ''
     if letras_min:
