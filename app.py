@@ -24,6 +24,7 @@ def gerar_senha(tamanho, letras_min, letras_mai, numeros, especiais):
 @app.route('/', methods=['GET', 'POST'])
 
 def index():
+
     senha = None
     if request.method == 'POST':
         tamanho = int(request.form.get('tamanho', 12))  # Tamanho padrão: 12
